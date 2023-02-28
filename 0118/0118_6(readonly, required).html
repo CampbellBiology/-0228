@@ -1,0 +1,46 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>readonlym required 속성 사용하기</title>
+      </head>
+      <body>
+        <h1>레드향 주문하기</h1>
+        <form>
+          <fieldset>
+            <legend>배송 정보</legend>
+            <ul id="shipping">
+            <li>
+              <lable for="prod">주문 상품</lable>
+              <input type="text" id="prod" value="상품용 3KG(읽기 전용,수정도 안 됨)" readonly>
+            </li>
+            <li>
+              <lable for="user-name">이름</lable>
+              <input type="text" id="user-name" autofocus required>
+            </li>
+            <li>
+              <lable for="addr">배송 주소</lable>
+              <input type="text" id="addr" required>
+            </li>
+            <li>
+              <lable for="mail">이메일</lable>
+              <input type="email" id="mail">
+            </li>
+            <li>
+              <lable for="phone">연락처</lable>
+              <input type="tel" id="phone" placeholder="하이픈 빼고 입력해주세요.(01012345678)" required>
+            </li>
+            <li>
+              <lable for="d-day">배송 지정</lable>
+              <input type="date" id="d-day">
+              <small>(주문일로부터 최소 3일 이후)</small>
+            </li>
+          </ul>
+          </fieldset>
+          <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+          </div>
+        </form>
+      </body>
+</html>

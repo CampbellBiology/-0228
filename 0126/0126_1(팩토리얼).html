@@ -1,0 +1,28 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>팩토리얼</title>
+      </head>
+      <body>
+        <script>
+          var n = prompt("write number");
+          var msg= "";
+
+          if(n !==null){
+            var nFact=1;
+            var i=1;
+
+            while(i<=n){
+              nFact *=i;
+              i++;
+            }
+            msg = n + "!=" + nFact;
+          }
+          else
+          msg="값을 입력하지 않았습니다.";
+
+          document.write(msg);
+        </script>
+      </body>
+</html>

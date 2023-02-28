@@ -1,0 +1,109 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>nate</title>
+
+        <style>
+            * {
+                margin-top: 0px;
+            }
+            h1 {
+                color: rgb(255, 44, 46);
+                text-align: center;
+                font-weight: 800;
+                font-size: 3em;
+                
+            }
+            h4 {
+                color: gray;
+                font-weight: 100;
+            }
+
+            p {
+                font-size: small;
+                font-weight: bold;
+            }
+            table{
+                text-align: center;
+            }
+
+            .td {
+                border: 1px solid rgb(190, 188, 188);
+                padding: 0px;
+            }
+
+            div {
+                line-height: 2em;
+            }
+
+            .button1 {
+                width: 420px;
+                height: 50px;
+                border: none;
+                color: rgb(129, 128, 128);
+            }
+
+            .lable {
+                width: 420px;
+                height: 40px;
+                border: none;
+                border-bottom: 1px solid #000;
+            }
+
+            #left-sidebar{
+                width: 500px;
+                height: 1000px;
+                float: left;
+            }
+
+            #right-sidebar {
+                width: 20%;
+                float: right; 
+            }
+            
+        </style>
+      </head>
+      <body>
+        <h1>nate</h1>
+        <h2>휴대폰 인증을 진행해 주세요.</h2>
+        <h4>휴대폰 번호는 아이디/비밀번호 찾기에 사용됩니다.
+            <br>인증번호 받기 전 보안 문자를 입력해 주세요.</h4>
+    
+        <div>
+        <p><lable for="te-fi">그림문자 또는 음성 문자</lable>
+        <table>
+            <th>
+                <td width="305" class="td">
+                    <img src="../0120/check_word.png" width="130">
+                </td>
+                <td>
+                    <button type="button"><img src="../0120/reload_btn.png" alt=""></button>
+                </td>
+                <td>
+                    <button type="button"><img src="../0120/volume_btn.png">
+                </td>
+            </th>
+        </table>
+        <input type="text" id="te-fi" placeholder="그림문자 또는 음성문자 입력" class="lable">
+     <br> <br>
+        <p><lable for="tel">휴대폰<br></lable>
+            <select id="nation" class="lable">
+                <option>Korea(82)</option>
+            </select><br>
+            <input type="tel" id="tel" maxlength="11" placeholder="-없이 숫자만 입력" class="lable">
+            <button type="submit" value="인증번호 받기">인증번호 받기</button>
+        </p>
+       <br> 
+        <p><lable for="num">인증번호</lable><br>
+            <input type="text" id="num" placeholder="인증번호(10분동안 유효)" class="lable" >
+            <button type="submit" value="">인증하기</button>
+        </p>
+        
+        <p>
+            <button class="button1">다음</button>
+        </p>
+    </div>
+      </body>
+      
+</html>

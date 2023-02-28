@@ -1,0 +1,42 @@
+<!Doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>3중for</title>
+  <style>
+    div {
+      display: inline-block;
+      padding: 0 20px 30px 20px;
+      margin: 15px;
+      border: 1px solid #ccc;
+      line-height: 2;
+    }
+
+    div h3 {
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    var i, j, k;
+
+    for (i = 1; i <= 5; i++) {
+      document.write("<div>")
+        document.write("<h3>i열"+"</h3>");  
+      for (j = 2; j <= 5; j++) {
+        document.write("j열"+"<br>"); 
+        for (k = 3; k <= 5; k++) {
+          // document.write("k열"+"<br>"); 
+          document.write("(" + i + "," + j + "," + k + ")" + "<br>");
+        }
+      }
+      document.write("</div>");
+    }
+  </script>
+</body>
+
+</html>

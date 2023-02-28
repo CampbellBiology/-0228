@@ -1,0 +1,27 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>옷가게</title>
+      </head>
+      <body>
+        <script>
+          var price = parseInt(prompt("옷 가격 (100만원 내)"));
+
+          if(price < 100000) {
+            document.write("할인 없음(가격/할인가)" + price + "/"+ parseInt(price));
+          }
+          if(price >= 100000 && price < 300000) {
+            document.write("5% 할인(가격/할인가)=" + price + "/" + parseInt( price*0.95));
+          }
+
+          if(price >= 300000 && price < 500000) {
+            document.write("10%할인(가격/할인가)" + price + "/" + parseInt(price*0.90));
+          }
+
+          if(price >= 500000 && price < 1000000) {
+            document.write("20% 할인(가격/할인가)" + price + "/" + parseInt(price*0.8));
+          }
+        </script>
+      </body>
+</html>

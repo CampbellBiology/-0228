@@ -1,0 +1,17 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>날짜 시간 출력</title>
+        <script>
+          function printDate() {
+            document.getElementById("date").innerHTML = Date();
+          }
+        </script>
+      </head>
+      <body>
+        <p>현재 날씨와 시간 정보</p>
+          <button onclick="printDate()">현재 날씨와 시간 표시하기</button>
+          <p id="date"></p>
+      </body>
+</html>

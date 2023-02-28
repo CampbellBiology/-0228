@@ -1,0 +1,81 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>레이아웃 연습</title>
+        <style>
+          * {
+            background-color: #eef3d2;
+          }
+          header {
+            margin-left: 5px 1px;
+            background-color: #0f4208f8;
+            color: white;
+            font-size: 3em;
+            text-align: center;
+            width: 400px;
+          }
+
+          nav {
+            margin-left: 5px 1px;
+            background-color: #184d11f8;
+            color: white;
+            font-size: 3em;
+            text-align: center;
+            width: 400px;
+          }
+
+          aside {
+            position: fixed;
+            margin-left: 5px 1px;
+            background-color: #376432f8;
+            color: white;
+            font-size: 3em;
+            text-align: center;
+            width: 100px;
+            float: left;
+          }
+
+          section {
+            margin-left: 5px 1px;
+            padding-left: 100px;
+            background-color: #44a237f8;
+            color: white;
+            font-size: 3em;
+            text-align: center;  
+            width: 300px;
+            
+          }
+
+          footer {
+            margin-left: 5px 1px;
+            background-color: #50734cf8;
+            color: white;
+            font-size: 3em;
+            text-align: center;
+            width: 400px;
+          }
+
+          #content-wrap {
+           width: 100%;
+
+          }
+          
+          #content-wrap:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+        </style>
+      </head>
+      <body>
+        <header>Header</header>
+        <nav>Nav</nav>
+        <div id="content-wrap">
+          <aside>Side</aside>
+          <section>Section</section>
+        </div>
+        <footer>Footer</footer>
+      </body>
+</html>

@@ -1,0 +1,25 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>addEventListener(이벤트, 함수, 캡처 여부)</title>
+      </head>
+      <body>
+     <img src="images/easys-1.jpg" id="cover">
+
+     <script>
+      var cover = document.getElementById("cover");
+      cover.addEventListener("mouseover", changePic);
+      cover.addEventListener("mouseout", originPic);
+
+      function changePic() {
+        cover.src = "images/easys-2.jpg";
+      }
+
+      function originPic() {
+        cover.src = "images/easys-1.jpg";
+      }
+     </script>
+
+      </body>
+</html>

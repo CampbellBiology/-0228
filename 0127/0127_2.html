@@ -1,0 +1,43 @@
+<!Doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>1~4사분면</title>
+</head>
+
+<body>
+  <script>
+    var x = parseInt(prompt("x좌표 입력"));
+    var y = parseInt(prompt("y좌표 입력"));
+
+    if (x > 0 && y > 0) {
+      alert("(" + x + ", " + y + ")" + "는 1사분면에 속합니다.");
+    }
+
+      if (x > 0 && y < 0) {
+        alert("(" + x + ", " + y + ")" + "는 4사분면에 속합니다.");
+      }
+
+        if (x < 0 && y > 0) {
+          alert("(" + x + ", " + y + ")" + "는 2사분면에 속합니다.");
+        }
+
+          if (x < 0 && y < 0) {
+            alert("(" + x + ", " + y + ")" + "는 3사분면에 속합니다.");
+          }
+
+          if(x==0 && y!=0) {
+            alert("(" + x + ", " + y + ")" + "는 x좌표축 위에 있습니다");
+          }
+
+          if(y==0 && x!=0) {
+            alert("(" + x + ", " + y + ")" + "는 y좌표축 위에 있습니다");
+          }
+        
+          else
+          alert("(" + x + ", " + y + ")" + "는 원점입니다");
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>margin inherit</title>
+      </head>
+      <style>
+        div {
+          background-color: aquamarine;
+          border: 2px solid teal;
+        }
+
+        div.parent {
+          height: 100px;
+          margin-left: 100px;
+        }
+
+        div.child {
+          background-color: burlywood;
+          margin-left: inherit;
+        }
+
+      </style>
+      <body>
+        <h1>margin 속성값 조절</h1>
+        <div>아무런 margin 속성값도 설정하지 않은 요소입니다.</div><br>
+        <div class="parent">left-margin 속성값을 100px로 설정한 요소입니다.
+          <div class="child">left-margin 속성값을 inherit로 설정한 요소입니다.</div>
+        </div>
+      </body>
+</html>

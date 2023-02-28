@@ -1,0 +1,20 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>입력한 숫자만큼 합</title>
+      </head>
+      <body>
+        <script>
+            var Num = parseInt(prompt("숫자를 입력하세요"));
+            var i=0;
+            var sum = 0;
+
+            for(i=0; i<=Num; i++){
+              sum += i;
+            }
+
+            document.write("1부터 입력한 숫자 " + Num + "까지의 합은 "+ sum + "입니다.");
+        </script>
+      </body>
+</html>

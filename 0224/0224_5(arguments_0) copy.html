@@ -1,0 +1,27 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>arguments 적용 전</title>
+      </head>
+      <body>
+        <h1>함수의 호출 : 적은 수의 인수</h1>
+
+        <script>
+          function addNum(x, y, z) {
+            if(x===undefined)
+            x=0;
+            if(y===undefined)
+            y=0;
+            if(z===undefined)
+            z=0;
+            return x+y+z;
+          }
+
+          document.write("인수가 3개 모두 전달되면 반환값은 " + addNum(1, 2, 3) + "입니다.<br>");
+	      	document.write("인수가 2개만 전달되면 반환값은 " + addNum(1, 2) + "입니다.<br>");
+	        document.write("인수가 1개만 전달되면 반환값은 " + addNum(1) + "입니다.<br>");
+		      document.write("인수가 아무것도 전달되지 않으면 반환값은 " + addNum() + "입니다.");
+        </script>
+       </body>
+</html>

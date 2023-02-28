@@ -1,0 +1,24 @@
+<!Doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>주차요금 계산</title>
+</head>
+
+<body>
+  <script>
+    var _pt = parseInt(prompt("주차 시간"));
+
+    if(_pt<=180) {
+      document.write(_pt + "분 주차했을 때 주차 요금은 기본료 5000원");
+    }
+
+    if(_pt>180) {
+      var _pf = parseInt((_pt-180)/10)*500 + 5000;
+      document.write(_pt + "분 주차했을 때 주차 요금은 " + _pf + "원");
+    }
+  </script>
+</body>
+
+</html>

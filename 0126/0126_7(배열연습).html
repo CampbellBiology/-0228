@@ -1,0 +1,22 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>배열 연습, 배열 크기 받고, n번째 배열값을 입력 받은 뒤 배열 출력</title>
+      </head>
+      <body>
+        <script>
+          var _cycle = parseInt(prompt("배열의 크기 지정"));
+          var array = new Array(_cycle);
+
+          for(var i = 0; i < array.length; i++) {
+            // for(var i=0; i<_cycle; i++){  과 같음
+            var _tmpValue = parseInt(prompt(i + "번째 배열값 입력"));
+            array[i]= _tmpValue;
+            console.log(array[i]);
+          }
+
+          alert(array);
+        </script>
+      </body>
+</html>

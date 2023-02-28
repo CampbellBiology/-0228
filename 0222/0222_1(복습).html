@@ -1,0 +1,98 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>다시 만들어보기</title>
+      </head>
+      <style>
+        h1 {
+          color: red;
+          text-align: center;
+          font-size: 3em;
+        }
+
+        p {
+          color: gray;
+          font-size: 1em;
+        }
+
+        label {
+          font-size: 0.8em;
+          font-weight: bold;
+        }
+
+        td {
+                border: 1px solid rgb(161, 161, 161);
+                padding-left: 0px;
+                border-radius: 5px;
+                text-align: left;
+                width: 135px;
+                height: 30px;
+            }
+
+        .textbox {
+          margin: 2px;
+          height: 40px;
+          width: 420px;
+          border: none;
+          border-bottom: 1px solid black;
+        }
+
+        .nextpage {
+          margin: 0px;
+          height: 40px;
+          width: 420px;
+          border: none;
+          background-color: rgb(208, 208, 208);
+        }
+
+        .radio {
+          margin: 0px;
+          width: 100px;
+          border: 0.5px solid gray;
+        }
+       
+      </style>
+      <body>
+        <h1>nate</h1>
+        <h2>휴대폰 인증을 진행해주세요.</h2>
+        <p>휴대폰 번호는 아이디/비밀번호 찾기에 사용됩니다.
+          <br>인증번호 받기 전 보안 문자를 입력해주세요.</p>
+
+        <div>
+        <label>그림문자 또는 음성 문자</label><br>
+        <input type="text" placeholder="그림문자 또는 음성문자 입력" class="textbox">
+<br><br>
+        <label>휴대폰</label>
+        <select class = "textbox">
+          <option>Korea(82)</option>
+<br>
+          <option>다른 나라</option>
+        </select>
+        <input type="tel" maxlength="11" placeholder="-없이 숫자만 입력" class="textbox">
+<br>
+        <input type="button" value = "인증번호 받기">
+<br><br>
+        
+        <label>성별</label><br>
+        <table>
+        <th>
+          <td>
+            <input type="radio" name="gender" value="women">여성
+          </td>
+          <td>
+            <input type="radio" name="gender" value="men">남성
+          </td>
+        </th>
+      </table>
+
+      </div>
+
+      <p>
+        저희 서비스를 이용하는 사람이 회원님의 연락처 정보를 Facebook에 업로드했을 수도 있습니다. 
+        <a href="https://ko-kr.facebook.com/help/637205020878504" title="더 알아보기??">더 알아보기</a>
+      </p>
+<br><br>
+        <button class="nextpage">다음</button>
+      </body>
+</html>

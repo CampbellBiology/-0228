@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Display</title>
+
+</head>
+
+<body onload="OnloadPage()">
+  <select id="select_value" onchange="ChangeValue()" >
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+  
+  <div>
+    <p id="gugudanHead"></p>
+    <p id="_Data"></p>
+  </div>
+
+
+  <script>
+    var _xx;
+
+    var _gugudan = document.getElementById("_Data");
+    var _gugudanhead = document.getElementById("gugudanHead");
+
+    function OnloadPage()
+    {
+      ChangeValue();
+    }
+
+
+    function ChangeValue() {
+      var _value = document.getElementById('select_value');
+      _xx = _value.options[_value.selectedIndex].value;
+      console.log(_xx);
+      ShowGuGudan();
+    }
+
+    function ShowGuGudan() {
+      _gugudanhead.innerText = "";
+      _gugudan.innerText = "";
+      _gugudanhead.innerText = _xx + "단"
+      for (var i = 1; i < 10; i++) {
+        _gugudan.innerText += _xx + " X " + i + " = " + _xx * i + "\n";
+      }
+
+    }
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>facebook</title>
+        <style>
+            body {
+                width: 420px;
+                border: 1px solid #000;
+                padding: 5px;
+            }
+
+            .title {
+                line-height: 10px;
+            }
+
+            .content {
+                line-height: 1.2em;
+                font-size: small;
+                color: rgb(116, 114, 114);
+            }
+
+            .personal1 {
+                width: 200px;
+                height: 30px;
+                border: 1px solid rgb(196, 192, 192);
+                border-radius: 5px;
+                background-color: rgb(233, 229, 229);
+            }
+
+            .personal2 {
+                width: 410px;
+                height: 30px;
+                border: 1px solid rgb(196, 192, 192);
+                border-radius: 5px;
+                background-color: rgb(233, 229, 229);
+            }
+
+            .birth{
+                width: 136px;
+                height: 30px;
+                border: 1px solid rgb(161, 161, 161);
+            }
+
+            /* .sex{
+                border: 1px solid #000;
+                background-color: aqua;
+                width: 100px;
+                margin-left: -30px;
+            } */
+
+           
+            td {
+                border: 1px solid rgb(161, 161, 161);
+                border-radius: 5px;
+                text-align: left;
+                width: 135px;
+                height: 30px;
+            }
+
+            .button1 {
+                width: 200px;
+                height: 40px;
+                border: none;
+                border-radius: 10px;
+                font-weight: bold;
+                font-size: large;
+                color: #fff;
+                background-color: green;
+                margin-left: 100px;
+            }
+        </style>
+      </head>
+      <body>
+        <div class="title">
+        <h1>가입하기</h1>
+        <p>빠르고 쉽게 가입할 수 있습니다.</p>
+        </div>
+
+        <hr>
+
+        <div class="">
+            <input type="text" placeholder=" 성(姓)" class="personal1" autofocus>
+            <input type="text" placeholder=" 이름(성은 제외)" class="personal1">
+            <p>
+            <input type="text" placeholder=" 휴대폰 번호또는 이메일" class="personal2">
+            </p>
+            <p><input type="text" placeholder=" 새 비밀번호" class="personal2">
+            </p>
+        </div>
+
+        <div class="content">
+            <p>
+            <lable>생일</lable>
+            <img src="../0120/info_btn.png" width="15" title="더 자세한 정보를 원하시면 여기를 클릭하세요."><br>
+            <select class="birth">
+                <option>2023</option>
+                <option>2022</option>
+            </select>
+            <select class="birth">
+                <option>1월</option>
+                <option>2월</option>
+            </select>
+            <select class="birth">
+                <option>19</option>
+                <option>20</option>
+            </select>
+            </p>
+            
+            <lable>성별</lable>
+            <img src="../0120/info_btn.png" width="15" title="더 자세한 정보를 원하시면 여기를 클릭하세요.">
+                <table>
+                    <th>
+                        <td>
+                            <input type="radio" name="sex" value="woman" class="sex">여성
+                        </td>
+                        <td>
+                            <input type="radio" name="sex" value="man" class="sex">남성
+                        </td>
+                        <td>
+                            <input type="radio" name="sex" value="self" class="sex">직접지정
+                        </td>
+                    </th>
+                </table>
+        <!-- </div>
+
+        <div> -->
+            <p>저희 서비스를 이용하는 사람이 회원님의 연락처 정보를 Facebook에 업로드했을 수도 있습니다.
+                <a href="https://ko-kr.facebook.com/help/637205020878504">더 알아보기</a></p>
+            <p>가입하기 버튼을 클릭하면 Facebook의 
+                <a href="https://ko-kr.facebook.com/legal/terms/update">약관</a>,
+                <a href="https://ko-kr.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0"> 개인정보처리방침</a> 및 
+                <a href="https://ko-kr.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0">쿠키 정책</a>에 동의하게 됩니다. Facebook으로부터 SMS 알림을 받을 수 있으며 알림은 언제든지 옵트 아웃할 수 있습니다.</p>
+        </div>
+
+        <button class="button1">가입하기</button>
+      </body>
+</html>

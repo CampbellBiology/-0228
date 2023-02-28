@@ -1,0 +1,52 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>navigation bar</title>
+      </head>
+      <style>
+        ul {
+          background-color: yellowgreen;
+          width: 150px;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          border: solid 1px black;
+        }
+
+        li { border-bottom: solid 1px black;}
+        li:last-child { border-bottom: none; }
+
+        li a{
+          display: block;
+          color: #000000;
+          padding: 8px;
+          text-align: center;
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        li a.current {
+          background-color: #FF6347;
+          color: white;
+        }
+
+        li.a:hover:not(.current) {
+          background-color: #CD853F;
+          color: white;
+        }
+
+
+
+      </style>
+      <body>
+        <h1>현재 위치 및 메뉴 간 경계선 표현</h1>
+        <ul>
+          <li><a href = "/index.php">home</a></li>
+          <li><a href="/html/intro" class="current">HTML</a></li>
+          <li><a hreaf ="/css/intro">CSS</a></li>
+          <li><a href="/javascript/intro">javascript</a></li>
+        </ul>
+        </div>
+      </body>
+</html>

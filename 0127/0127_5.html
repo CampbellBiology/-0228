@@ -1,0 +1,34 @@
+<!Doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>홀짝출력</title>
+</head>
+
+<body>
+  <script>
+    var _range = parseInt(prompt("범위 지정"));
+    var a = parseInt(prompt("1-홀수, 2-짝수"));
+
+    switch (a) {
+      case 1:
+        for (i = 1; i <= _range; i++) {
+          if (i % 2 == 1) {
+            document.write(i + ", ");
+          }
+        }
+        break;
+
+      case 2:
+        for (i = 1; i <= _range; i++) {
+          if (i % 2 == 0) {
+            document.write(i + ", ");
+          }
+        }
+        break;
+    }
+  </script>
+</body>
+
+</html>

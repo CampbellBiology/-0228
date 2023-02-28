@@ -1,0 +1,17 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>이벤트 발생 위치 알아내기L</title>
+      </head>
+      <body>
+     <img src="../예제소스/17/images/cup-1.png" id="cup">
+
+     <script>
+      var cup = document.querySelector("#cup");
+      cup.onclick = function(event) {
+        alert("클릭한 이미지 파일 " + this.src);
+      }
+     </script>
+      </body>
+</html>

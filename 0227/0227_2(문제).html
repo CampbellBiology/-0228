@@ -1,0 +1,83 @@
+<!Doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>월별스위치</title>
+
+  <!-- 버튼1~12까지 추가
+  버튼 누를 경우 해당 월에 대한 일수를 출력
+  ex 1월은 31일, 2월은 28일, 3월은 31일 -->
+</head>
+
+<body>
+  <button class="btn_test" value="1" onclick="GetBtnValue(this.value)">1</button>
+  <button class="btn_test" value="2" onclick="GetBtnValue(this.value)">2</button>
+  <button class="btn_test" value="3" onclick="GetBtnValue(this.value)">3</button>
+  <button class="btn_test" value="4" onclick="GetBtnValue(this.value)">4</button>
+  <button class="btn_test" value="5" onclick="GetBtnValue(this.value)">5</button>
+  <button class="btn_test" value="6" onclick="GetBtnValue(this.value)">6</button>
+  <button class="btn_test" value="7" onclick="GetBtnValue(this.value)">7</button>
+  <button class="btn_test" value="8" onclick="GetBtnValue(this.value)">8</button>
+  <button class="btn_test" value="9" onclick="GetBtnValue(this.value)">9</button>
+  <button class="btn_test" value="10" onclick="GetBtnValue(this.value)">10</button>
+  <button class="btn_test" value="11" onclick="GetBtnValue(this.value)">11</button>
+  <button class="btn_test" value="12" onclick="GetBtnValue(this.value)">12</button>
+
+  <div>
+    <p id="month"></p>
+    <p id="_Data"></p>
+  </div>
+
+
+  <script>
+
+    var _xx;
+    var _month = document.getElementById('month');
+    var _monthdata = document.getElementById('_Data');
+  
+    function GetBtnValue(GetValue) {
+  
+      _xx = GetValue;
+  
+      console.log(GetValue);
+      Show();
+    }
+  
+    function Show() {
+      _month.innerText = "";
+      _monthdata.innerText = "";
+      _month.innerText = _xx + "월";
+  
+  
+      switch(_xx) {
+  
+        case "1":
+        case "3":
+        case "5":
+        case "7":
+        case "8":
+        case "10":
+        case "12":
+          _monthdata.innerText = _xx+ "월은 31일입니다."
+          break;
+  
+  
+        case "4":
+        case "6":
+        case "9":
+        case "11":
+          _monthdata.innerText = _xx+ "월은 30일입니다."
+          break;
+  
+        default:
+          _monthdata.innerText = _xx + "월은 28일입니다."
+      }
+    }
+  </script>
+
+</body>
+
+
+
+</html>
