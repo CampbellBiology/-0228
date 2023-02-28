@@ -1,0 +1,47 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+        <main>
+          <!--버튼으로 입력된 숫자가 보이는 영역, 직접입력x-->
+          <input type="text" disabled>  
+          <!-- 버튼들 집합 -->
+          <div class="button-wrap">
+            <!-- AC버튼, AC 기능 -->
+            <button data-type="ac" class="ac">AC</button>
+            <!-- 나누기 버튼, operator 타입(계산) -->
+            <button data-type="operator">&divide;</button>
+            <!-- 일반 숫자 버튼 -->
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <!-- 곱하기 버튼, operator 타입(계산) -->
+            <button data-type="operator">&times;</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <!-- 빼기 버튼, operator 타입(계산), 덧셈 뺄셈 기호는 괜찮음 -->
+            <button data-type="operator">-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <!-- 더하기 버튼, operator 타입(계산) -->
+            <button data-type="operator">+</button>
+            <!-- 0버튼 크기 크게 할 거라 클래스 부여 -->
+            <button class="zero">0</button>
+            <button>.</button>
+            <!-- = 버튼으로 계산 실행 -->
+            <button data-type="equals" class="equals">=</button>
+            </div>
+            </main>
+            <!-- 함수 따로 뺌 -->
+            <script src="script.js"></script>
+          </div>
+        </main>
+      </body>
+</html>
