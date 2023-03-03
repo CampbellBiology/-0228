@@ -10,6 +10,7 @@ main {
   width: 150px;
 }
 
+/* 버튼 묶음, 그리드 활용, 1프레임이 4개씩 반복되게 */
 .button-wrap {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

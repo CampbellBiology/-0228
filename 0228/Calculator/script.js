@@ -23,7 +23,7 @@ class Calculator {
   //AC를 눌렀을 때 초기화 함수
   clear() {
     this.displayContent=''
-    this.displayElement.value=999
+    this.displayElement.value=0
   }
   //연산 함수, eval은 문자열 내용을 계산한 값을 리턴.
   //그런데 나눗셈과 곱셈 기호는 우리가 보는 연산자와 다르므로 replace를 통해 치환
