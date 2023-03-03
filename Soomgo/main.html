@@ -9,35 +9,197 @@
 </head>
 
 <body>
+
+  <header>
+    <img src="../숨고이미지/icon-navi-logo.svg" width="70px" id="logo">
+    <button class="HeaderTitle"><a>고수매칭</a></button>
+    <button class="HeaderTitle"><a>고수찾기</a></button>
+    <button class="HeaderTitle"><a>마켓</a></button>
+    <button class="HeaderTitle"><a>커뮤니티</a></button>
+    <input type="text" placeholder="       어떤 서비스가 필요하세요?" id="search">
+    <button class="HeaderTitle"><a>로그인</a></button>
+    <button class="HeaderTitle"><a>회원가입</a></button>
+    <button class="GoSu"><a>고수가입</a></button>
+  </header>
+  
   <main>
-<header>Header~~</header>
-<div id="banner">Banner</div>
-<div id="blank">여백</div>
-<nav>nav</nav>
-<div id="blank">여백</div>
-<div id="title">
-<h1>숨고 커뮤니티에 물어보세요</h1>
-<h4>전체보기></h4>
-</div>
-<div id="mid-left">mid-left
-  <article id="left_article_1">
-    <p class="left_tag"> 궁금해요</p>
-    <p class="left_title">asdf</p>
-    <p class="contents">qwer</p>
-    <img src="../숨고이미지/mid-left/view.png"> viewcount <img src="../숨고이미지/mid-left/comment.png"> commentcount
-  </article>
-  <article id="left_article_2">2</article>
-  <article id="left_article_3">3</article>
-</div>
-<div id="mid-right">mid-right
-  <article id="right_article_2">
-    <img src="../숨고이미지/mid-right/image1.webp" float 왼쪽주기>
-    <p class="right_tag"> 궁금해요</p>
-    <p class="right_title">asdf</p>
-    <p class="업체명">qwer</p>
-  </article>
-  <article id="right_article_2">2</article>
-</div>
+   
+
+    <content>
+      <!-- 슬라이드 배너 -->
+      <div class="outer">
+        <div class="inner-list">
+          <div class="inner">
+            <img src="../숨고이미지/banner.webp" alt="banner" width="1000px" height="230px">
+          </div>
+          <div class="inner">
+            <img src="../숨고이미지/banner2.webp" alt="banner" width="1000px" height="230px">
+          </div>
+          <div class="inner">
+            <img src="../숨고이미지/banner3.webp" alt="banner" width="1000px" height="230px">
+          </div>
+        </div>
+      </div>
+
+      <div class="button-list">
+        <button class="button-left"><img src="../숨고이미지/left button.png" width="30px"></button>
+        <button class="button-right"><img src="../숨고이미지/right button.png" width="30px"></button>
+      </div>
+      <!-- 슬라이드 배너 -->
+
+      <div id="banner">
+
+      </div>
+      <div id="blank"></div>
+      <nav>
+        <button type="button" class="btn_image" id="nav_btn"><img src="../숨고이미지/navigator/lesson.svg"><br>레슨</button>
+        <button type="button" class="btn_image" id="nav_btn"><img src="../숨고이미지/navigator/home.svg"><br>홈/리빙</button>
+        <button type="button" class="btn_image" id="nav_btn"><img src="../숨고이미지/navigator/event.svg"><br>이벤트</button>
+        <button type="button" class="btn_image" id="nav_btn"><img
+            src="../숨고이미지/navigator/business.svg"><br>비지니스</button>
+        <button type="button" class="btn_image" id="nav_btn"><img
+            src="../숨고이미지/navigator/design-development.svg"><br>디자인/개발</button>
+        <button type="button" class="btn_image" id="nav_btn"><img
+            src="../숨고이미지/navigator/health-beauty.svg"><br>건강/미용</button>
+        <button type="button" class="btn_image" id="nav_btn"><img
+            src="../숨고이미지/navigator/part-time-job.svg"><br>알바</button>
+        <button type="button" class="btn_image" id="nav_btn"><img src="../숨고이미지/navigator/etc.svg"><br>기타</button>
+      </nav>
+      <div id="blank"></div>
+
+      <div id="title">
+        <div class="title-left">숨고 커뮤니티에 물어보세요</div>
+        <div class="title-right">
+          <button id="viewAll" onclick="location.href='https://soomgo.com/community/soomgo-life/all';">전체보기></button>
+        </div>
+      </div>
+      <div id="blank"></div>
+
+      <div id="mid-left">
+        <article id="left_article" onclick="location.href='https://soomgo.com/community/soomgo-life/all';">
+          <p class="left_tag"> 궁금해요</p>
+          <p class="left_title">상향식 보일러 단점이 머에요?</p>
+          <p class="contents">2층 상가주택인데요 1층에 보일러가 있는데요. 대부분 하향식이라고 하더라고요. </p>
+          <img src="../숨고이미지/mid-left/view.png" width="10px"> viewcount <img src="../숨고이미지/mid-left/comment.png"
+            width="10px"> commentcount
+        </article>
+        <article id="left_article">
+          <p class="left_tag"> 궁금해요</p>
+          <p class="left_title">짐 보관 이사 문의</p>
+          <p class="contents">제가 27일날 석우동에서 석우동 오피스텔에서 근처 한건물 앞 오피스텔로 이사... </p>
+          <img src="../숨고이미지/mid-left/view.png" width="10px"> viewcount <img src="../숨고이미지/mid-left/comment.png"
+            width="10px"> commentcount
+        </article>
+        <article id="left_article">
+          <p class="left_tag"> 얼마예요</p>
+          <p class="left_title">가벽 철거 비용 궁금합니다.</p>
+          <p class="contents">주방과 거실 이어지는 부분인데 노란색 표시부분 가벽을 없애고 싶습 </p>
+          <img src="../숨고이미지/mid-left/view.png" width="10px"> viewcount <img src="../숨고이미지/mid-left/comment.png"
+            width="10px"> commentcount
+        </article>
+      </div>
+
+      <div id="mid-right">
+        <article id="right_article">
+          <img src="../숨고이미지/mid-right/image1.webp" id="article_img">
+          <p class="right_tag"> 상업 공간 인테리어</p>
+          <p class="right_title">죽은공간 심폐소생 시키는 인테리어</p>
+          <p class="Name">에디슨하우스</p>
+        </article>
+        <article id="right_article">
+          <img src="../숨고이미지/mid-right/image2.webp" id="article_img">
+          <p class="right_tag"> 도배 시공</p>
+          <p class="right_title">퍼티도배가 필요할까?</p>
+          <p class="Name">청년 도배</p>
+        </article>
+        <script src="script.js"></script>
+      </div>
+    </content>
+
+    <hr>
+
+    <footer>
+      <div id="layer1">
+        <div id="info">
+          <p>1599-5319</p>
+          <p>평일 10:00 - 18:00<br>
+            (점심시간 13:00 - 14:00 제외 · 주말/공휴일 제외)</p>
+          <p><br></p>
+          <img src="../숨고이미지/footer/store1.png" width="130"><img src="../숨고이미지/footer/store2.png" width="130">
+        </div>
+        <div id="footer-menu">
+          <table>
+            <th>숨고소개</th>
+            <th>고객안내</th>
+            <th>고수안내</th>
+            <th>고객안내</th>
+            <tr>
+              <td>회사소개</td>
+              <td>이용안내</td>
+              <td>이용안내</td>
+              <td>공지사항</td>
+            </tr>
+            <tr>
+              <td>채용안내</td>
+              <td>안전정책</td>
+              <td>고수가이드</td>
+              <td>자주묻는질문</td>
+            </tr>
+            <tr>
+              <td>팀블로그</td>
+              <td>예상금액</td>
+              <td>고수가입</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>고수찾기</td>
+              <td>고수센터</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>숨고보증</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>고수에게묻다</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="layer2">
+        <div id="terms">
+            <span>이용약관</span>
+            <span>개인정보처리방침</span>
+            <span>위치기반 서비스 이용약관</span>
+            <span>사업자 정보확인</span>
+        </div> 
+      </div>
+      <div id="layer3">
+        <div id="terms_2">
+          <p>(주)브레이브모바일은 통신판매중개자로서 통신판매의 당사자가 아니며 개별 판매자가 제공하는 서비스에 대한 이행, 계약사항 등과 관련한 의무와 책임은 거래당사자에게 있습니다.</p>
+        </div>
+        <div id="addr">
+          <p>상호명:(주)브레이브모바일 · 대표이사:KIM ROBIN H · 개인정보책임관리자:김태우 · 주소:서울특별시 강남구 테헤란로 415, L7 강남타워 5층
+          사업자등록번호:120-88-22325 · 통신판매업신고증:제 2021-서울강남-00551 호 · 직업정보제공사업 신고번호:서울청 제 2019-21호
+          고객센터:1599-5319 · 이메일:support@soomgo.com
+          Copyright ©Brave Mobile Inc. All Rights Reserved.</p>
+        </div>
+        <div id="sns">
+          <img src="../숨고이미지/footer/icon-footer-sns-facebook.svg" width="28px">
+          <img src="../숨고이미지/footer/icon-footer-sns-instagram.svg" width="28px">
+          <img src="../숨고이미지/footer/icon-footer-sns-naverblog.svg" width="28px">
+          <img src="../숨고이미지/footer/icon-footer-sns-naverpost.svg" width="28px">
+          <img src="../숨고이미지/footer/icon-footer-sns-tistory.svg" width="28px">
+        </div>
+      </div>
+    </footer>
+
   </main>
 </body>
 
