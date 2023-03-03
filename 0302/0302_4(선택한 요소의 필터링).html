@@ -1,0 +1,29 @@
+<!Doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>제목</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("button").on("click", function () {
+        $("li:has(span)").text("<span>요소를 가진 아이템")
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <h1>선택한 요소의 필터링</h1>
+
+  <ul>
+    <li>첫 번째 아이템이에요!</li>
+    <li><span>두 번째</span> 아이템이에요!</li>
+    <li>세 번째 아이템이에요!</li>
+  </ul>
+  <button>필터링</button>
+</body>
+
+</html>

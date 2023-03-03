@@ -15,7 +15,7 @@ class Calculator {
   appendOperator(operator) {
     this.displayContent += operator
   }
-  //숫자 및 연산자를 화면에 표시
+  //숫자 및 연산자를 화면(input)에 표시
   updateDisplay() {
     this.displayElement.value = this.displayContent
   }
@@ -23,7 +23,7 @@ class Calculator {
   //AC를 눌렀을 때 초기화 함수
   clear() {
     this.displayContent=''
-    this.displayElement.value=0
+    this.displayElement.value=999
   }
   //연산 함수, eval은 문자열 내용을 계산한 값을 리턴.
   //그런데 나눗셈과 곱셈 기호는 우리가 보는 연산자와 다르므로 replace를 통해 치환
@@ -44,7 +44,7 @@ const calculator = new Calculator(displayElement)
 
 
 //button마다 이벤트리스너를 탐
-//이벤트리스너는 클릭할 때마다 함수를 실행함
+//이벤트리스너는 클릭할 때마다(forEach) 함수를 실행함
 buttons.forEach(button=> {
   //함수 바로 명시 ()=>{}
   button.addEventListener('click', ()=> {

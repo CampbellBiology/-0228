@@ -1,0 +1,25 @@
+<!Doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>제목</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("button").on("click", function () {
+        var newText = $("h1").html();	// <h1>요소의 텍스트를 읽어오는 getter 메소드
+        $("#text").html(newText);		// id가 "text"인 요소에 새로운 텍스트를 설정하는 setter 메소드
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h1>html() 매서드</h1>
+  <p>아래 버튼을 누르면 다음 단락에 새로운 문구 생김</p>
+  <button> 새로운 문구</button>
+  <p id="text"></p>
+</body>
+
+</html>

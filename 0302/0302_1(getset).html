@@ -1,0 +1,32 @@
+<!Doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>새로운 요소 추가</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+    function func() {
+      createElement();
+      addAttribute();
+    }
+    function createElement() {
+      var criterialNode = document.getElementById("text");
+      var newNode = document.createElement("p");
+      newNode.innerHTML = "새로운 단락";
+      newNode.setAttribute("id", "para");
+      document.body.insertBefore(newNode, criterialNode);
+    }
+    function addAttribute() {
+      document.getElementById(newNode, criterialNode);
+    }
+  </script>
+</head>
+
+<body>
+  <h1>아직 생성되지 않은 HTML 요소에 속성 추가</h1>
+  <button onclick="func()">속성 추가</button>
+  <p id="text"></p>
+</body>
+
+</html>
