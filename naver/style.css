@@ -1,0 +1,104 @@
+main {
+    width: 450px;
+    border: 1px solid black;
+    margin: auto;
+    clear:both;
+}
+
+header {
+    margin-left: auto;
+    margin-right: 10%;
+    float: right;
+}
+
+* {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+
+#logo {
+    text-align: center;
+}
+
+#blank {
+    clear:both;
+}
+
+a{
+    text-decoration: underline;
+}
+
+#Chk_All_checkbox {
+    float:left;
+}
+
+
+
+input[type=checkbox] {
+    transform : scale(1.5);
+    margin: 10px;
+    }
+
+.check_val {
+    font-weight: 550;
+}
+.esst {
+    color: rgb(6, 172, 0);
+}
+
+.sel {
+    color: gray;
+}
+
+#text_box {
+    /* 텍스트박스를 스크롤 형식으로 만듦 */
+    padding: 5px;
+    overflow: auto;
+    margin-left:10px;
+    border: 0.5px solid rgba(128, 128, 128, 0.415);
+    width: 420px;
+    height: 80px;
+    font-size:11px;
+    color: gray;
+}
+
+.str {
+    font-size:11px;
+    font-weight: 600;
+    color: rgb(32, 32, 32);
+}
+
+#text_box2 {
+    margin:0px 10px 0px 10px;
+    width: 430px;
+    height: 80px;
+    font-size:11px;
+    color: gray;
+}
+
+#btn {
+        width: 200px;
+        height:50px;
+        border: none;
+        color: white;
+        font-weight: 600;
+        margin: 12px;
+        text-align: center;
+}
+.cancel {background-color: gray;}
+
+.confirm {background-color: rgb(6, 172, 0);}
+
+#footer {
+    text-align: center;
+    
+}
+#footer > a, p{
+    font-size: 11px;
+    margin: 0;
+}
+#footer > a{
+    color: black;
+}

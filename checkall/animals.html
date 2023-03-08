@@ -1,0 +1,57 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제목</title>
+      </head>
+
+      <script>
+        
+
+        function checkAllCheck () {
+            const checkboxes = document.querySelectorAll('input[id="animal"]');
+            const selectAll = document.querySelector('input[id="selectall"]');
+            const checked = document.querySelectorAll('input[id="animal"]:checked');
+
+            if(checkboxes.length === checked.length) {
+                selectAll.checked = true;
+            } else { selectAll.checked = false;}
+        }
+
+        function checkAll() {
+            var checkboxes = document.querySelectorAll('input[id="animal"]');  //리스트 객체임
+            var SelectAll = document.querySelector('#selectall');
+            
+            // if(seleckAll.checked == true) {
+            //     checkboxes.checked = true;
+            // } else {checkboxes.checked = false;}
+            //안되는 이유: 리스트 객체이기 때문에 한자리씩 비교해줘야함
+
+            // selectAll이 true이면 리스트 내의 모든 값이 true
+             if(SelectAll.checked == true) {
+                for(var i = 0; i<checkboxes.length; i++) {
+                    checkboxes[i].checked = true;
+                }
+            }
+             else {
+                for(var i = 0; i<checkboxes.length; i++) {
+                    checkboxes[i].checked = false;
+                }
+            }
+
+
+
+
+        }
+      </script>
+
+
+      <body>
+
+            <input type="checkbox" id="selectall" onclick="checkAll()">전체선택</option>
+            <input type="checkbox" id="animal" value="cat" onchange="checkAllCheck()">고양이</option>
+            <input type="checkbox" id="animal" value="dog" onchange="checkAllCheck()">강아지</option>
+            <input type="checkbox" id="animal" value="dog" onchange="checkAllCheck()">돌고래</option>
+ 
+      </body>
+</html>

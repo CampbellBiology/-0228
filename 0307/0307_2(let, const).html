@@ -1,0 +1,22 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>제목</title>
+      </head>
+      <body>
+        <script>
+        var a = 3;
+        let b = 2;
+        
+        if(true) {
+            var a = 5;
+            let b = 4;  //재선언 안 됨
+        }
+
+        alert(a);  //5
+        alert(b);  //2
+      </script>
+     
+      </body>
+</html>
