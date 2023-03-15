@@ -1,0 +1,117 @@
+<!Doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>제목</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<script>
+
+    // function blur() {
+    //     // var IDtextBox = document.getElementById("#ID");
+    //     var plusTxt = document.getElementByID("#plus_txt");
+   
+    //     plusTxt.innerHTML = "추가되는 텍스트";
+    // }  //이거 마저해보기  //해봤는데 onblur가 안됨, onfocusout으로 했음
+     
+function logID() {
+    let ID_txtbx = document.querySelector('#IDBox');
+    let regID = /^[a-z0-9-_]{5,20}$/;
+
+    if(ID_txtbx.value=="") {
+        document.querySelector('#plus_txt_ID').innerHTML = "필수값입니다";}
+    else if(!regID.test(ID_txtbx.value)) //정규식
+    {document.querySelector('#plus_txt_ID').innerHTML = "5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다.";}
+    // else if(ID_txtbx.value=="db에 있는 id") {document.querySelector('#plus_txt').innerHTML = "이미 사용중이거나 탈퇴한 아이디입니다.";}
+    else {document.querySelector('#plus_txt_ID').style.display="none";}
+}
+
+function logPW() {
+    let PW_txtbx = document.querySelector('#PWBox');
+    let regPW = /^[a-z0-9-_]{5,20}$/;
+    
+
+    if(PW_txtbx.value=="") {
+        document.querySelector('#plus_txt_PW').innerHTML = "필수값입니다";}
+        //이미지 사용 불가 넣기
+    else if(!regPW.test(PW_txtbx.value)) //정규식
+    {document.querySelector('#plus_txt_PW').innerHTML = "8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.";
+     document.getElementById('lock').src="../naver/lock/lock-red.png";
+    //  document.getElementById('inablePW').innerHTML = "사용불가";
+    }
+    //이미지 사용 불가 넣기
+    
+    //위험, 보통, 안전 조건 잘 모르겠음 
+    //찾아보니 정규식 규칙만 코드가 몇천줄임 난 못해... 하나에 하나씩만 대응시켜보자
+
+    //영문 대소문자, 숫자, 특수문자 중 2개 이상 사용하면 보통
+    //연속되는 문자열, 같은 글자가 3개 이상이면 위험
+    //영문 대소문자, 숫자, 특수문자를 하나 이상씩 사용하고 중복 없으면 안전
+
+    else {document.querySelector('#plus_txt_PW').style.display="none";}
+
+}
+
+function logPWConfirm() {
+    let PW_txtbx = document.querySelector('#PWBox');
+    let PW_confirm = document.querySelector('#PWConFirmBox');
+    
+    if(PW_confirm.value=="") { 
+        document.querySelector('plus_txt_PWConfirm').innerHTML = "필수값입니다"; 
+    }
+    // if(PW.value==PW_confirm.value) {
+    //     document.querySelector('#plus_txt_PWConfirm').style.display="none";
+    // }
+    // if (PW.value!==PW_confirm.value) {
+    //     document.querySelector('#plus_txt_PWConfirm').innerHTML = "비밀번호가 일치하지 않습니다.";
+    // }
+
+}
+   
+</script>
+
+<body>
+    <main>
+        <div id="logo">
+            <img src="../naver/logo.png" width="50%">
+        </div>
+        <div id="blank"></div>
+
+        <label>아이디</label><br>
+        <div id="form_ID" class="form">
+            <input type="text" id="IDBox" class="txtbx" onfocusout="logID()"><span class="naver">@naver.com</span>  
+        </div>
+        <div id="plus_txt_ID"></div>
+<br>
+        <label>비밀번호</label><br>
+        <div id="form_PW" class="form">
+            <input type="text" id="PWBox" class="txtbx" onfocusout="logPW()"><span class="inablePW" id="inablePW"><img src="../naver/lock/lock-gray.png" class="lock" id="lock"></span> 
+        </div>
+        <div id="plus_txt_PW"></div>
+<br>
+        <label>비밀번호 확인</label><br>
+        <div id="form_PW_Confirm" class="form">
+            <input type="text"id="PWConFirmBox" class="txtbx" onfocusout="logPWConfirm()"><span class="이미지"><img src="../naver/lock/lock-gray-checked.png" class="lock"></span>
+        </div>
+        <div id="plus_txt_PWConfirm"></div>
+
+
+<br><br>
+        <label>생년월일</label>
+        <br>
+        
+        
+        <label>외국인/내국인</label><br>
+        <input type="radio" id="내국인" name="foreignTest" value="내국인" class="radioButton">내국인
+        <input type="radio" id="foreign" name="foreignTest" value="foreign" class="radioButton">외국인
+
+
+
+
+    </main>
+</body>
+
+</html>

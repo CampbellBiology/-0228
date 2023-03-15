@@ -1,0 +1,89 @@
+.form {
+    width: 440px;
+    height: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.54);
+    background-color: bisque;
+    padding-top:5px;
+}
+
+.txtbx {
+    width: 350px;
+    height: 20px;
+    border: none;
+    background-color: aquamarine;
+    margin: 0px;
+}
+
+.naver {
+    font-size: 15px;
+    color: gray;
+    text-align: right;
+    font-weight: 200;
+}
+
+
+#inablePW {
+    
+    font-size:8pt;
+    /* background-color: brown; */
+}
+
+.lock {
+    /* display: inline-block; */
+    /* background-color: blue; */
+    width: 15px;
+    float: right;
+    margin-right:5px;
+}
+
+.radioButton {
+    width: 100px;
+    background-color: aqua;
+    margin: 0;
+    border: 1px solid black;
+}
+
+.birth {
+    width: 120px;
+    height: 20px;
+    border: none;
+}
+
+th {
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+    width: 145px;
+    height: 40px;
+}
+
+select { height: 30px;}
+
+.gender {
+    width: 420px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    background-color: #00000000;
+}
+
+#selection {
+    color: gray;
+    font-size: 0.8em;
+}
+
+
+main {
+    height: auto;
+}
+
+#form_phone {
+    display: inline-block;
+}
+#plus_txt_phone {
+    display: inline-block;
+}
+
+#CN {
+    background-color: black;
+}
