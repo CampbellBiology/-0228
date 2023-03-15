@@ -1,8 +1,10 @@
+
+
 .form {
     width: 440px;
     height: 30px;
     border: 1px solid rgba(128, 128, 128, 0.54);
-    background-color: bisque;
+    background-color: rgb(255, 255, 255);
     padding-top:5px;
 }
 
@@ -10,7 +12,7 @@
     width: 350px;
     height: 20px;
     border: none;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     margin: 0px;
 }
 
@@ -19,6 +21,7 @@
     color: gray;
     text-align: right;
     font-weight: 200;
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -34,27 +37,30 @@
     width: 15px;
     float: right;
     margin-right:5px;
+    background-color: rgb(255, 255, 255);
 }
 
-.radioButton {
+/* .radioButton {
     width: 100px;
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     margin: 0;
     border: 1px solid black;
-}
+} */
 
 .birth {
     width: 120px;
     height: 20px;
     border: none;
+    background-color: rgb(255, 255, 255);
 }
 
 th {
-    border: 1px solid black;
+    border: 1px solid rgba(128, 128, 128, 0.54);
     margin: 0px;
     padding: 0px;
     width: 145px;
     height: 40px;
+    background-color: rgb(255, 255, 255);
 }
 
 select { height: 30px;}
@@ -81,9 +87,106 @@ main {
     display: inline-block;
 }
 #plus_txt_phone {
+    margin-top: 10px;
     display: inline-block;
 }
 
-#CN {
-    background-color: black;
+#submit {
+    width: 420px;
+    height: 40px;
+    background-color: rgb(0, 200, 80);
+    color: white;
+    text-align: center;
+    margin-left:15px;
+    border: none;
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+}
+
+.terms {
+    width: auto;
+    height: 20px;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    display: inline-block;
+}
+
+#line {
+    font-weight: 200;
+    color: gray;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+a > .bold {
+    font-weight: 600;
+}
+
+#copyright > a  {
+    font-weight: 600;
+}
+
+#copyright > a:hover {
+    color: rgb(0, 200, 80);
+    text-decoration: underline;
+}
+
+#footerLogo {
+    width: 100px;
+    margin-bottom: -10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+* {
+    background-color: rgb(244, 244, 244);
+}
+
+.txtbx_small {
+    /* display: inline-block; */
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.54);
+}
+
+.confirmNumber {
+    /* display: inline-block; */
+    width: 120px;
+    height: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.54);
+    background-color: rgb(0, 200, 80);
+    color: white;
+    text-align: center;
+}
+
+.blank {
+    margin-top:5px;
+    height: 5px;
+}
+
+.txtbx_gray {
+    width: 350px;
+    height: 20px;
+    border: none;
+    background-color: white;
+    margin: 0px;
+    display: inline-block;
+}
+
+#plus_txt_ID, #plus_txt_PW, #plus_txt_PWConfirm, #plus_txt_Name, #plus_txt_birth, #plus_txt_gender
+, #plus_txt_email, #plus_txt_phone
+{
+    color: red;
 }
