@@ -1,4 +1,28 @@
+main {
+    width: 450px;
+    /* border: 1px solid black; */
+    margin: auto;
+    clear:both;
+    height: auto;
+}
 
+/* header {
+    margin-left: auto;
+    margin-right: 10%;
+    float: right;
+} */
+
+* {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5em;
+    background-color: rgb(244, 244, 244);
+}
+
+
+#logo {
+    text-align: center;
+}
 
 .form {
     width: 440px;
@@ -79,9 +103,9 @@ select { height: 30px;}
 }
 
 
-main {
+/* main {
     height: auto;
-}
+} */
 
 #form_phone {
     display: inline-block;
@@ -116,6 +140,7 @@ footer {
     background-color: rgba(0, 0, 0, 0);
     border-style: none;
     display: inline-block;
+    font-size: smaller;
 }
 
 #line {
@@ -134,6 +159,7 @@ a > .bold {
 
 #copyright > a  {
     font-weight: 600;
+    font-size: smaller;
 }
 
 #copyright > a:hover {
@@ -182,9 +208,17 @@ label {
     width: 350px;
     height: 20px;
     border: none;
-    background-color: white;
+    background-color: rgb(205, 203, 203);
     margin: 0px;
     display: inline-block;
+}
+
+.form2 {
+    width: 440px;
+    height: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.54);
+    background-color: rgb(205, 203, 203);
+    padding-top:5px;
 }
 
 #plus_txt_ID, #plus_txt_PW, #plus_txt_PWConfirm, #plus_txt_Name, #plus_txt_birth, #plus_txt_gender

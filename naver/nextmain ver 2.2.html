@@ -4,18 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>네이버:회원가입 따라하기2</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="style2.css">
 </head>
 
 <script>
-
-    // function blur() {
-    //     // var IDtextBox = document.getElementById("#ID");
-    //     var plusTxt = document.getElementByID("#plus_txt");
-   
-    //     plusTxt.innerHTML = "추가되는 텍스트";
-    // }  //이거 마저해보기  //해봤는데 onblur가 안됨, onfocusout으로 했음
      
 function logID() {
     let ID_txtbx = document.querySelector('#IDBox');
@@ -45,14 +38,6 @@ function logPW() {
      document.getElementById('inablePW').innerHTML = "사용불가";
      document.getElementById('lock').src="../naver/lock/lock-red.png";
     }
-    //이미지 사용 불가 넣기
-    
-    //위험, 보통, 안전 조건 잘 모르겠음 
-    //찾아보니 정규식 규칙만 코드가 몇천줄임 난 못해... 하나에 하나씩만 대응시켜보자
-
-    //영문 대소문자, 숫자, 특수문자 중 2개 이상 사용하면 보통
-    //연속되는 문자열, 같은 글자가 3개 이상이면 위험
-    //영문 대소문자, 숫자, 특수문자를 하나 이상씩 사용하고 중복 없으면 안전
 
     else {document.querySelector('#plus_txt_PW').style.display="none";
     document.getElementById('inablePW').innerHTML = "안전";
@@ -67,7 +52,7 @@ function logPWConfirm() {
     if(PW_confirm.value=="") { 
         document.querySelector('#plus_txt_PWConfirm').innerHTML = "필수값입니다"; 
     }
-    if(PW_txtbx.value==PW_confirm.value) {
+    if(PW_txtbx.value==PW_confirm.value && PW_confirm.value!=="") {
         document.querySelector('#plus_txt_PWConfirm').style.display="none";
         document.getElementById('lock2').src="../naver/lock/lock-green-checked.png";
     }
@@ -168,14 +153,17 @@ function logCN() {
         document.querySelector('#plus_txt_phone').innerHTML = "형식에 맞지 않는 번호입니다.";
     } else { 
         document.querySelector('#plus_txt_phone').innerHTML = "인증번호를 발송했습니다.<br> (유효시간 30분) 인증번호가 오지 않으면 입력하신 정보가 정확한지 확인하여 주세요. <br>이미 가입된 번호이거나, 가상전화번호는 인증번호를 받을 수 없습니다.";
-        // document.querySelector('#CN').style.backgroundColor="blue"; 
+        document.querySelector('#plus_txt_phone').style.color="green";
+        document.getElementById('CNBox').readOnly=false;
+        document.querySelector('#CN').style.backgroundColor="white"; 
+        document.querySelector('#CNBox').style.backgroundColor="white"; 
     }
 }
 
    
 </script>
 
-<body>        
+<body>     
     <main>
         <div id="logo">
             <img src="../naver/logo.png" width="50%">
@@ -262,7 +250,7 @@ function logCN() {
             <input type="text" id="phoneBox" class="txtbx_small" onfocusout="logPhone()" placeholder="전화번호 입력">
             <button type="button" class="confirmNumber" onclick="logCN()">인증번호 받기</button>
 <br><div class="blank"></div>
-            <div id="CN" class="form"><input type="text" id="CNBox" class="txtbx_gray" placeholder="인증번호를 입력하세요"></div>
+            <div id="CN" class="form2"><input type="text" id="CNBox" class="txtbx_gray" placeholder="인증번호를 입력하세요" readonly></div>
         </div>
 <br>
         <div id="plus_txt_phone"></div>       

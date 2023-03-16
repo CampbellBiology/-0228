@@ -44,7 +44,17 @@ function checkSelectAll()  {
   }else {
     selectAll.checked = false;
   }
+}
 
+function ChkRequired() {
+    var bb = document.getElementById("Chk2");
+    var cc = document.getElementById("Chk3");
+
+    if(bb.checked==true && cc.checked==true) {
+        location.href='nextmain ver 2.2.html';
+    } else {
+        alert("필수 항목을 체크해주세요.");
+    }
 }
 
 </script>
@@ -80,7 +90,7 @@ function checkSelectAll()  {
             </div>
             
             <input type="checkbox" id="Chk3" value="체크용2" required onclick=checkSelectAll() name="chkbx">
-            <span class="check_val">개인정보 수집 및 이용 동의</span><span class="esst">(필수)</span><br>
+            <span class="check_val">개인정보 수집 및 이용 동의</span><span class="esst">(필수)</span><button type="button" value="어린이용 안내" class="child" onclick="location.href='https://nid.naver.com/user2/V2Join?m=kidGuide'">어린이용 안내</button><br>
             <div id="text_box">
                 개인정보보호법에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다. <br><p class="str">1. 수집하는 개인정보</p><br>
             </div>
@@ -102,9 +112,8 @@ function checkSelectAll()  {
             </div>
 
         <br>
-        <button type="button" id="btn" class="cancel" onClick="location.href='http://www.naver.com'">취소</button><button type="button" id="btn" class="confirm"
-        onClick="location.href='nextmain ver 2.2.html'">확인</button>
-
+        <button type="button" id="btn" class="cancel" onClick="location.href='http://www.naver.com'">취소</button><button type="button" id="btn" class="confirm" onclick="ChkRequired()">확인</button> 
+<!-- onClick="location.href='nextmain ver 2.2.html'" -->
         <div id="footer">
             <p>회사, 동아리 등 단체에서 사용할 ID가 필요하세요? </p> <a href="https://nid.naver.com/user2/join/groupJoin?lang=ko_KR">단체
                 회원 가입</a>

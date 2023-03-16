@@ -107,3 +107,10 @@ input[type=checkbox] {
 #footer > a{
     color: black;
 }
+
+.child {
+    border: 1px solid rgb(6, 172, 0);
+    margin-left: 113px;
+    background-color: white;
+    color: rgb(6, 172, 0);
+}
